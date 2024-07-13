@@ -1,0 +1,5 @@
+# why typeOf was showing the type as object rather than array when we clearly defined the variable as an array 
+
+### Limited Type Information: JavaScript is a dynamically typed language. This means the data type of a variable is associated with its value at runtime, not when it's declared. typeof simply checks the current value and returns a broad category like "object" or "number." It doesn't have access to more specific details like whether the object is an array or a regular object.
+
+### Arrays as a Special Kind of Object: In JavaScript, arrays are technically a type of object. They inherit properties and methods from the general object type. However, they also have additional methods specifically designed for working with collections of elements. So, while team is an array, it's still considered an object in the broader sense by typeof.

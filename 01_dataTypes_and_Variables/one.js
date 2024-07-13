@@ -43,5 +43,5 @@ console.log(assignOne);
 
 const checkConst = 11;
 console.log(checkConst);
-checkConst = 111;
+// checkConst = 111;
 // if we try to assign a new variable to const variable we will get a "Assignment to constant Variable" error, this kind of happens when we try to reassign value to immutable types meanning thir values can't be altered once we declare them
