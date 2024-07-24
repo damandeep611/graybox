@@ -1,0 +1,21 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+  padding: 0.5rem 3rem;
+}
+.night-mode {
+  background-color: rgb(9, 9, 19);
+  color:  #ffffff ;
+}
+.day-mode {
+  background-color: #ffffff;
+  color: black;
+}
