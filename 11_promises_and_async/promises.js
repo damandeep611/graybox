@@ -29,10 +29,38 @@ function mathPromise() {
     }, 2000);
   });
 }
-mathPromise()
-  .then((message) => {
-    console.log(message);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+// mathPromise()
+//   .then((message) => {
+//     console.log(message);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+const myPromise = new Promise((resolve)=> {
+  setTimeout(()=> {
+    resolve("Promise practice")
+  }, 1500)
+})
+
+myPromise.then((message)=> {
+  console.log(message);
+})
+
+// create a promise that either resolves with success or rejects with error 
+const twoPromises = new Promise((resolve, reject)=> {
+  setTimeout(()=> {
+    const two = "the"
+    if(two == "three"){
+      resolve("promises is good")
+    }else {
+      reject("bad Promise")
+    }
+  }, 1500)
+})
+twoPromises.then((message)=> {
+  console.log(message);
+})
+.catch((error)=> {
+  console.log(error);
+})

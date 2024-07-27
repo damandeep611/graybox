@@ -1,30 +1,24 @@
 // ?write an async function that waits for promise to be resolved and then logs the resolve value
-async function waitForIt() {
-  const myPromise = new Promise((resolve, reject) => {
+
+
+async function myasyncPromise() {
+  const two = 3;
+  const asyncPromise = new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(`Promise resolved`);
-    }, 2000);
+      if (two == 2) {
+        resolve("checking async function work");
+      } else {
+        reject("an error has occured so reload buddy");
+      }
+    }, 1000);
   });
+
   try {
-    const resolvePromise = await myPromise;
-    console.log(resolvePromise);
+    const result = await asyncPromise;
+    console.log(result);
   } catch (error) {
-    console.error("Error:", error);
+    console.error("error fetching heheh data:", error);
   }
 }
-waitForIt();
-// ?write an async function that handles a rejected promise using try - catch and logs the error message
-async function waitForfail() {
-  const myPromise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      reject(`unsuccessful resolve`);
-    }, 2000);
-  });
-  try {
-    const resolvePromise = await myPromise;
-    console.log(resolvePromise);
-  } catch (error) {
-    console.error("Error occured:", error);
-  }
-}
-waitForfail();
+myasyncPromise();
+

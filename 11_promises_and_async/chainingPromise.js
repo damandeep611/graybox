@@ -1,43 +1,39 @@
 // ? create a sequence of promises that simulate fetching data from a server, chain the promises to log messages in specific order
 
-function fetchData1() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const data1 = "Data 1 fetched form the server";
-      resolve(data1);
-    }, 1000);
-  });
-}
+// ? chaining promises
 
-function fetchData2() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(`Data fetched, Depending on data1 ${data1}`);
-    }, 500);
-  });
-}
-
-function processesData() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const processedData = `${Data1} + ${Data2}`;
-      resolve(processedData);
-    }, 1500);
-  });
-}
-
-fetchData1()
-  .then((data1) => {
-    console.log(`Data from fetch data 1 recived, ${data1}`);
-    return fetchData2(data1);
+const number = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve(5);
+  }, 1500);
+});
+number
+  .then((result) => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(result * 2);
+      }, 1000);
+    });
   })
-  .then((data2) => {
-    console.log(`Data recieved from data 2, ${data2}`);
-    return processesData(data1, data2);
+  .then((finalResult) => {
+    console.log(finalResult);
+    return finalResult * 3;
   })
-  .then((processedData) => {
-    console.log(`processed data Recieved, ${processedData}`);
+  .then((final) => {
+    console.log(final);
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (final == 20) {
+          resolve("the answer is twenty");
+        } else {
+          reject("the answer if not 20 bro");
+        }
+      }, 500);
+    });
+  })
+  .then((message) => {
+    console.log(message);
   })
   .catch((error) => {
-    console.log("Error:", error);
+    console.log(error);
   });
