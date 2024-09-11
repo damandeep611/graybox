@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+<body>
+  <main class="flex items-center justify-center  max-w-xl mx-auto ">
+    <div class="flex flex-col items-center justify-center border m-10">
+      <div class="mt-8 flex items-center justify-center">
+        <h2 class="text-2xl font-semibold">Todo tasks</h2>
+      </div>
+      <div class="mt-6 flex items-center justify-center gap-4">
+        <input type="text" id="taskInput" placeholder="Enter your task" class="bg-slate-700 text-white px-8 py-2">
+        <button onclick="addTask()" class="px-8 py-2 bg-black text-white" id="addTaskBtn">Add</button>
+      </div>
+      <div class="flex items-center justify-center m-8 ">
+        <ul id="taskBox" class="p-8 flex flex-col gap-6">
+          <li id="taskItem" class="flex items-center justify-between gap-4 border border-slate-800 py-2 px-8">
+            <span class="text-lg">Work done !</span>
+            <button class="bg-red-700 text-white px-6 py-2">Delete</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
