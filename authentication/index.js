@@ -1,8 +1,12 @@
-const express = require("express");
-const app = express();
+function getName(name) {
+  return name.length;
+}
 
-app.get("/", (req, res) => {
-  res.send("<h1>middleares test</h1>");
-});
-
-app.listen(3000);
+try {
+  const ans = getName(8);
+  console.log(ans);
+  console.log("check try");
+} catch (e) {
+  console.log("inside catch");
+}
+console.log("try catch method");
