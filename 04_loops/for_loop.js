@@ -30,4 +30,22 @@ function reverseString(str) {
   return reversedStr;
 }
 
-console.log(reverseString("martian"));
+//array reversal 
+let newArr = [1,2,3,4,5,6,7,8,9,10];
+function reverseArray(arr){
+  let reverseArr = [];
+  for(let i = arr.length - 1; i >= 0; i--){
+    reverseArr.push(arr[i]);
+  }
+  return reverseArr
+}
+// console.log(reverseArray(newArr))
+
+// print a start pattern going from 1 star to 5 in vertical stacks 
+for(let i = 0; i <= 5; i++){
+  let pattern = "";
+  for(let j = 0; j <= i; j++){
+    pattern += "*"
+  }
+  console.log(pattern); 
+}
