@@ -1,3 +1,2 @@
-#js 30 Start 
+# Javascript Resources and Projects
 
-## Day 1 - 13 july 2024
