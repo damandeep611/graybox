@@ -1,1 +1,0 @@
-run - npm install first and then nodemon server.js to get the local server started and then visit http://localhost:3000 to start the application
