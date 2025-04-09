@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+
+/* Default (light mode) */
+:root {
+  --color-bg: #ffffff;
+  --color-text: #111827;
+  --color-primary: #2563eb; /* blue-600 */
+  --color-secondary: #6b7280; /* gray-500 */
+  --color-accent: #10b981; /* emerald-500 */
+}
+
+/* Dark mode */
+.dark {
+  --color-bg: #111827;
+  --color-text: #f9fafb;
+  --color-primary: #3b82f6; /* blue-500 */
+  --color-secondary: #9ca3af; /* gray-400 */
+  --color-accent: #34d399; /* emerald-400 */
+}
