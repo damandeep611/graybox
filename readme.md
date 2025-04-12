@@ -35,7 +35,7 @@ I use this repo as a dev second brain:
 Want a browsable version of my notes with code snippets and visuals?
 
 👉 [Visit the Learning Vault Docs](https://your-fumadocs-site.vercel.app)  
-🗂 Source folder: [`/fumadocs`](./dev-notes)
+🗂 Source folder: [`/dev-notes`](./dev-notes)
 
 ---
 
