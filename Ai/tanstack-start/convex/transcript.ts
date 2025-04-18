@@ -11,8 +11,8 @@ export const getYoutubeTranscript = internalAction({
   },
   handler: async (ctx, args) => {
     const url = new URL(args.url);
-    const videoId  = url.searchParams.get("v") || "";
-    if(!videoId) throw new Error("Invalid youtube URL")
+    const videoId = url.searchParams.get("v") || "";
+    if (!videoId) throw new Error("Invalid youtube URL");
     const youtube = await Innertube.create({
       lang: "en",
       location: "US",
@@ -23,7 +23,9 @@ export const getYoutubeTranscript = internalAction({
     const transcriptText = transcript.transcript.content?.body?.initial_segments
       .map((segment) => segment.snippet.text ?? "")
       .join("");
-    console.log(transcriptText);
+    if (!transcriptText) {
+      throw new Error("No Transcript found");
+    }
     return transcriptText;
   },
 });
@@ -45,11 +47,14 @@ ${args.transcript}
     const modelResponse = GenAi.models.generateContent({
       model: "gemini-2.0-flash-lite",
       contents: prompt,
-    })
-    const modelOutput = (await modelResponse).candidates?.[0]?.content?.parts?.[0]?.text;
-
+    });
+    const modelOutput = (await modelResponse).candidates?.[0]?.content
+      ?.parts?.[0]?.text;
+    if (!(await modelResponse).candidates?.[0]?.content) {
+      throw new Error("No response from Gemini API");
+    }
     return {
       summary: modelOutput,
-    }
+    };
   },
 });

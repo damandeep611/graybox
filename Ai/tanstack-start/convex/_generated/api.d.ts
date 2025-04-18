@@ -11,6 +11,7 @@
 import type * as index from "../index.js";
 import type * as tasks from "../tasks.js";
 import type * as transcript from "../transcript.js";
+import type * as workflow from "../workflow.js";
 
 import type {
   ApiFromModules,
@@ -30,6 +31,7 @@ declare const fullApi: ApiFromModules<{
   index: typeof index;
   tasks: typeof tasks;
   transcript: typeof transcript;
+  workflow: typeof workflow;
 }>;
 declare const fullApiWithMounts: typeof fullApi;
 
