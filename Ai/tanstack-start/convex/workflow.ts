@@ -19,8 +19,8 @@ export const generateTitleWorkflow = workflow.define({
       internal.transcript.getYoutubeTranscript,
       {
         url: args.url,
-      }
-      {retry: {maxAttempts: 2, initialBackoffMs: 100, base: 2}}
+      },
+      { retry: { maxAttempts: 2, initialBackoffMs: 100, base: 2 } }
     );
     const summary = await step.runAction(internal.transcript.generateSummary, {
       transcript: transcript,
