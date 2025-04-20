@@ -10,7 +10,30 @@ I use this repo as a dev second brain:
 
 ---
 
-## 🔗 Quick Links
+## 🔗 Table of Contents
+
+
+1. **[AI Agents and Generative Ai](#1-call-stack)**
+2. **[Primitive Types](#2-primitive-types)**
+
+---
+
+## 1. AI Agents and Generative AI
+
+Links will be updated shortly
+
+### <img  align= center width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/1945/1945940.png"> Articles
+
+- [MCP, AI agents and RAG Projects for Beginners](https://blog.dailydoseofds.com/p/10-mcp-ai-agents-and-rag-projects)
+
+
+### <img align=center width="40" height="40" src="https://img.icons8.com/dusk/64/video.png" alt="video"/>  Videos
+
+- [Building AI agents with Tanstack and Convex DB](https://youtu.be/exWpG7szUMM?si=nLdOY-Oz16HoOcRd)
+    
+**[⬆ Back to Top](#table-of-contents)**
+
+---
 
 ### 🧠 AI / Agents
 - [🧱 Building AI Agents](./ai-agents/agents/)
@@ -27,6 +50,11 @@ I use this repo as a dev second brain:
 - [📦 API Routes](./nextjs/api/)
 - [⚙️ Middleware and Edge Config](./nextjs/middleware/)
 - [🚀 Fullstack App Examples](./nextjs/apps/)
+
+
+### 🌐 Authentication with frameworks
+- [Better Auth with Next js ](https://www.youtube.com/watch?v=HOVuVSmkloc&t=1068s)
+
 
 ---
 

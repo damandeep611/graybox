@@ -46,7 +46,7 @@ const Todos: FC<Props> = ({ todos }) => {
 
   // Rendering the Todo List component
   return (
-    <main className="flex mx-auto max-w-xl pt-24 w-full min-h-screen flex-col items-center p-16">
+    <main className="flex mx-auto max-w-xl pt-24 w-full min-h-screen  flex-col items-center p-16">
       <div className="text-5xl font-medium">To-do app</div>
       {/* Adding Todo component for creating new todos */}
       <AddTodo createTodo={createTodo} />
@@ -62,7 +62,6 @@ const Todos: FC<Props> = ({ todos }) => {
           />
         ))}
       </div>
-      
     </main>
   );
 };

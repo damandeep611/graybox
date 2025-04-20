@@ -1,4 +1,7 @@
 "use client";
+
+import SignIn from "../auth/sign-in";
+
 export default function HeroSection() {
   return (
     <section className="w-full h-screen bg-gradient-to-br from-[#fff8f0] via-[#ffe0d0] to-[#ffc0c0] dark:from-[#1a1c2c] dark:via-[#2e2f45] dark:to-[#3f4160]">
@@ -12,13 +15,17 @@ export default function HeroSection() {
               Master Your Time. Track Your Growth
             </h1>
             <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-700 dark:text-gray-200">
-            Stay on top of your tasks while leveling up your skills.
-            Organize your day, measure your progress, and build a smarter routine—one task at a time.
+              Stay on top of your tasks while leveling up your skills. Organize
+              your day, measure your progress, and build a smarter routine—one
+              task at a time.
             </p>
 
-            <button className="px-8 py-3 bg-black text-white rounded-full font-medium hover:bg-gray-800 transition-colors">
-              Get Started
-            </button>
+            <div className="flex items-center justify-between gap-4">
+              <button className="px-8 py-3 bg-black text-white rounded-full font-medium hover:bg-gray-800 transition-colors">
+                Get Started
+              </button>
+              <SignIn />
+            </div>
           </div>
         </div>
       </div>
