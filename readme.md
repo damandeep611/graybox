@@ -14,7 +14,7 @@ I use this repo as a dev second brain:
 
 
 1. **[AI Agents and Generative Ai](#1-call-stack)**
-2. **[Primitive Types](#2-primitive-types)**
+2. **[React Next js and Tanstack fundamentals](#2-react-fundamentals)**
 
 ---
 
@@ -30,6 +30,21 @@ Links will be updated shortly
 ### <img align=center width="40" height="40" src="https://img.icons8.com/dusk/64/video.png" alt="video"/>  Videos
 
 - [Building AI agents with Tanstack and Convex DB](https://youtu.be/exWpG7szUMM?si=nLdOY-Oz16HoOcRd)
+    
+**[⬆ Back to Top](#table-of-contents)**
+
+---
+
+---
+
+## 2. React Next js and Tanstack fundamentals
+
+
+### <img  align= center width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/1945/1945940.png"> Articles
+
+- [Understanding Server Components ](https://www.joshwcomeau.com/react/server-components/)
+
+
     
 **[⬆ Back to Top](#table-of-contents)**
 
