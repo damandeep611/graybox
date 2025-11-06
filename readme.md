@@ -1,105 +1,101 @@
-# 🧠 Learning Vault
+#🎯 Graybox - Full Stack Learning Repository
+A comprehensive collection of projects, experiments, and learning resources covering full-stack development, system design, algorithms, and infrastructure.
 
-This is my personal learning repo where I document, explore, and build stuff as I learn new tech.  
-Each folder at the root focuses on a different domain — like React, Next.js, AI agents, backend, etc.
+📚 Quick Index
+Languages & Fundamentals
 
-I use this repo as a dev second brain:  
-- Small practice projects live in topic folders  
-- Notes and resources go into READMEs  
-- A [Fumadocs site](#docs) is also linked below for browsable notes
+JavaScript Basics - javascript fundamentals
+TypeScript Deep Dive - typescript types
+Golang Essentials - golang concurrency
+Rust Fundamentals - rust memory-safety
 
----
+Frontend
 
-## 🔗 Table of Contents
+React State Management - react hooks state
+React with Bun - react bun bundler
+Next.js Routing Basics - nextjs routing ssr
+Next.js Dynamic Routing - nextjs routing dynamic
+Next.js Caching Strategies - nextjs caching isr
+Next.js Coolify Deployment - nextjs deployment coolify
+TanStack Query Basics - react tanstack data-fetching
+TanStack Router - react tanstack routing
 
+Backend
 
-1. **[AI Agents and Generative Ai](#1-call-stack)**
-2. **[React Next js and Tanstack fundamentals](#2-react-fundamentals)**
+HTTP Fundamentals - http protocols networking
+Routing Patterns - routing api-design
+TypeScript Backend - typescript nodejs backend
+Bun Backend - bun typescript performance
+Kafka - kafka messaging event-streaming
+Redis - redis caching data-store
+PostgreSQL - postgresql sql database
+MongoDB - mongodb nosql database
 
----
+Fullstack
 
-## 1. AI Agents and Generative AI
+Chat App - react websockets realtime fullstack
+tRPC Integration - trpc typescript api
+WebSockets App - websockets realtime nodejs
+Auth Implementation - authentication jwt sessions
 
-Links will be updated shortly
+Infrastructure
 
-### <img  align= center width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/1945/1945940.png"> Articles
+Docker Basic Setup - docker containers
+Docker Deployment Test - docker deployment
+Docker DigitalOcean - docker digitalocean cloud
+GitHub Actions - ci-cd github automation
+Prometheus - monitoring metrics observability
+Grafana - monitoring visualization observability
+Turborepo - monorepo build-tools
 
-- [MCP, AI agents and RAG Projects for Beginners](https://blog.dailydoseofds.com/p/10-mcp-ai-agents-and-rag-projects)
+System Design
 
+URL Shortener - system-design distributed-systems
+Rate Limiter - system-design algorithms
 
-### <img align=center width="40" height="40" src="https://img.icons8.com/dusk/64/video.png" alt="video"/>  Videos
+DSA
 
-- [Building AI agents with Tanstack and Convex DB](https://youtu.be/exWpG7szUMM?si=nLdOY-Oz16HoOcRd)
-    
-**[⬆ Back to Top](#table-of-contents)**
+Arrays - dsa data-structures arrays
+Linked Lists - dsa data-structures linked-lists
+Trees - dsa data-structures trees
+Sliding Window - dsa patterns algorithms
+Two Pointers - dsa patterns algorithms
 
----
+Computer Science Fundamentals
 
----
+HTTP Server Implementation - networking http sockets
+TCP Chat - networking tcp protocols
 
-## 2. React Next js and Tanstack fundamentals
+AI/ML
 
+AI SDK - ai llm sdk
+LLM Workflows - llm workflows automation
+Agents Basics - ai agents autonomous
 
-### <img  align= center width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/1945/1945940.png"> Articles
+Concepts
 
-- [Understanding Server Components ](https://www.joshwcomeau.com/react/server-components/)
+WebSockets Fundamentals - websockets realtime protocols
 
+Git Learning
 
-    
-**[⬆ Back to Top](#table-of-contents)**
-
----
-
-### 🧠 AI / Agents
-- [🧱 Building AI Agents](./ai-agents/agents/)
-- [📚 LangChain Experiments](./ai-agents/langchain/)
-- [🤖 Prompt Engineering](./ai-agents/prompts.md)
-
-### ⚛️ React
-- [🪝 React Hooks](./react/hooks/)
-- [⚡ Vite Projects](./react/vite-apps/)
-- [🎯 Concepts & Pitfalls](./react/concepts.md)
-
-### 🌐 Next.js
-- [🔐 NextAuth Setup](./nextjs/auth/)
-- [📦 API Routes](./nextjs/api/)
-- [⚙️ Middleware and Edge Config](./nextjs/middleware/)
-- [🚀 Fullstack App Examples](./nextjs/apps/)
-
-
-### 🌐 Authentication with frameworks
-- [Better Auth with Next js ](https://www.youtube.com/watch?v=HOVuVSmkloc&t=1068s)
-
-
----
-
-## 📝 Docs
-
-Want a browsable version of my notes with code snippets and visuals?
-
-👉 [Visit the Learning Vault Docs](https://your-fumadocs-site.vercel.app)  
-🗂 Source folder: [`/dev-notes`](./dev-notes)
-
----
-
-## 💡 Why This Repo Exists
-
-I don’t want to keep relearning the same stuff. This repo helps me:
-- Solidify concepts by building hands-on examples
-- Collect high-quality resources in one place
-- Revisit things later without digging through bookmarks or YouTube history
-- Share learnings and help others (if they land here)
-
----
-
-## 🔜 Coming Soon
-- [ ] Backend folder (Node.js, Express, DB stuff)
-- [ ] More AI agent tooling (AutoGen, CrewAI)
-- [ ] Deployments (Vercel, Render, etc.)
-- [ ] Design systems & component libraries
-
----
-
-> . Still learning. Still shipping. 🚢
+Branching Strategies - git branching workflows
+Rebase Practice - git rebase history
 
 
+🔗 Learning Paths
+Frontend Development Track:
+languages/javascript → languages/typescript → frontend/react → frontend/nextjs
+Backend Development Track:
+languages/typescript → backend/http-fundamentals → backend/routing-patterns → backend/typescript-backend
+Fullstack Development Track:
+frontend/react → backend/typescript-backend → fullstack/auth-implementation → fullstack/chat-app
+Real-time Applications Track:
+concepts/websockets → backend/websockets → fullstack/websockets-app
+System Design Track:
+backend/http-fundamentals → backend/redis → backend/kafka → system-design/url-shortener
+Modern Deployment Track:
+infrastructure/docker → infrastructure/ci-cd → infrastructure/cloud → infrastructure/observability
+Database Track:
+cs-fundamentals/databases → backend/postgresql → backend/mongodb → backend/redis
+DSA Fundamentals:
+dsa/data-structures/arrays → dsa/data-structures/linked-lists → dsa/patterns/two-pointers → dsa/patterns/sliding-window
