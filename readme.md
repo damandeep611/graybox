@@ -575,13 +575,15 @@ Implementing authentication and authorization in fullstack applications. Underst
 
 **[→ View Infrastructure README](./infrastructure/README.md)**
 
-### Docker Core fundamentals and workflows
+### Docker Core 
 **Path:** `infrastructure/docker`
 
 **Sub-Content:** `dockerFile/dockerCompose/yaml/docker-deployment-pipeline/Containerization/`
 
 Learning Docker fundamentals including containerization concepts, Dockerfiles, building images, running containers, volumes, networks, and docker-compose for multi-container applications.
+
 Testing deployment strategies with Docker including blue-green deployments, rolling updates, health checks, and container orchestration basics. Preparing applications for production deployment.
+
 Deploying Dockerized applications to DigitalOcean droplets and container registry. Understanding cloud deployment workflows, container registries, and managing production infrastructure.
 
 
