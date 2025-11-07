@@ -39,12 +39,10 @@ A comprehensive collection of projects, experiments, and learning resources cove
 - [Auth Implementation](#auth-implementation) - `authentication` `jwt` `sessions`
 
 ### Infrastructure
-- [Docker Basic Setup](#docker-basic-setup) - `docker` `containers`
-- [Docker Deployment Test](#docker-deployment-test) - `docker` `deployment`
-- [Docker DigitalOcean](#docker-digitalocean) - `docker` `digitalocean` `cloud`
+- [Docker Basic + Deployment-cloud + docker Pipeline](#docker-core) - `docker` `containers` `deployment` `cloud` `digitalocean` 
 - [GitHub Actions](#github-actions) - `ci-cd` `github` `automation`
-- [Prometheus](#prometheus) - `monitoring` `metrics` `observability`
-- [Grafana](#grafana) - `monitoring` `visualization` `observability`
+- [Prometheus + Grafana](#prometheus) - `monitoring` `metrics` `observability + visualization`
+- [ELK](#observability) - `Elasticsearch` `Logstash` `Kibana`
 - [Turborepo](#turborepo) - `monorepo` `build-tools`
 
 ### System Design
@@ -577,60 +575,41 @@ Implementing authentication and authorization in fullstack applications. Underst
 
 **[→ View Infrastructure README](./infrastructure/README.md)**
 
-### Docker Basic Setup
-**Path:** `infrastructure/docker/basic-setup/`
+### Docker Core fundamentals and workflows
+**Path:** `infrastructure/docker`
+**Sub-Content:** `dockerFile/dockerCompose/yaml/docker-deployment-pipeline/Containerization/`
 
 Learning Docker fundamentals including containerization concepts, Dockerfiles, building images, running containers, volumes, networks, and docker-compose for multi-container applications.
+Testing deployment strategies with Docker including blue-green deployments, rolling updates, health checks, and container orchestration basics. Preparing applications for production deployment.
+Deploying Dockerized applications to DigitalOcean droplets and container registry. Understanding cloud deployment workflows, container registries, and managing production infrastructure.
+
+
 
 **📖 Articles**
 - [Docker Documentation](https://docs.docker.com/)
 - [Docker Tutorial for Beginners](https://docker-curriculum.com/)
-
-**🎥 YouTube**
-- [Docker Course for Beginners](https://www.youtube.com/watch?v=fqMOX6JJhGo)
-- [Docker Crash Course](https://www.youtube.com/watch?v=pg19Z8LL06w)
-
-**📚 References**
-- [Docker Official Docs](https://docs.docker.com/)
-- [Docker Hub](https://hub.docker.com/)
-
----
-
-### Docker Deployment Test
-**Path:** `infrastructure/docker/deployment-test/`
-
-Testing deployment strategies with Docker including blue-green deployments, rolling updates, health checks, and container orchestration basics. Preparing applications for production deployment.
-
-**📖 Articles**
 - [Docker Deployment Strategies](https://docs.docker.com/get-started/orchestration/)
 - [Production-Ready Docker](https://dockerlabs.collabnix.com/docker/deployment/)
-
-**🎥 YouTube**
-- [Docker Deployment Strategies](https://www.youtube.com/watch?v=gW_EEoWrwLo)
-- [Docker in Production](https://www.youtube.com/watch?v=sK5i-N34im8)
-
-**📚 References**
-- [Docker Compose Docs](https://docs.docker.com/compose/)
-
----
-
-### Docker DigitalOcean
-**Path:** `infrastructure/docker/digitalocean-deploy/`
-
-Deploying Dockerized applications to DigitalOcean droplets and container registry. Understanding cloud deployment workflows, container registries, and managing production infrastructure.
-
-**📖 Articles**
 - [DigitalOcean Container Registry](https://docs.digitalocean.com/products/container-registry/)
 - [Deploy Docker to DigitalOcean](https://docs.digitalocean.com/products/droplets/how-to/deploy-docker/)
 
 **🎥 YouTube**
+- [Docker Course for Beginners](https://www.youtube.com/watch?v=fqMOX6JJhGo)
+- [Docker Crash Course](https://www.youtube.com/watch?v=pg19Z8LL06w)
+- [Docker Deployment Strategies](https://www.youtube.com/watch?v=gW_EEoWrwLo)
+- [Docker in Production](https://www.youtube.com/watch?v=sK5i-N34im8)
 - [Deploy to DigitalOcean](https://www.youtube.com/watch?v=KFyRyIjHjO8)
 - [Docker on DigitalOcean](https://www.youtube.com/watch?v=3c-iBn73dDE)
 
 **📚 References**
+- [Docker Official Docs](https://docs.docker.com/)
+- [Docker Hub](https://hub.docker.com/)
+- [Docker Compose Docs](https://docs.docker.com/compose/)
 - [DigitalOcean Documentation](https://docs.digitalocean.com/)
 
+
 ---
+
 
 ### GitHub Actions
 **Path:** `infrastructure/ci-cd/github-actions/`
