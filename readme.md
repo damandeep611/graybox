@@ -577,6 +577,7 @@ Implementing authentication and authorization in fullstack applications. Underst
 
 ### Docker Core fundamentals and workflows
 **Path:** `infrastructure/docker`
+
 **Sub-Content:** `dockerFile/dockerCompose/yaml/docker-deployment-pipeline/Containerization/`
 
 Learning Docker fundamentals including containerization concepts, Dockerfiles, building images, running containers, volumes, networks, and docker-compose for multi-container applications.
