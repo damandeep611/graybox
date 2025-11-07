@@ -13,26 +13,26 @@ A comprehensive collection of projects, experiments, and learning resources cove
 - [Rust Fundamentals](#rust-fundamentals) - `rust` `memory-safety`
 
 ### Frontend
-- [React State Management](#react-state-management) - `react` `hooks` `state`
-- [React with Bun](#react-with-bun) - `react` `bun` `bundler`
-- [Next.js Routing Basics](#nextjs-routing-basics) - `nextjs` `routing` `ssr`
-- [Next.js Dynamic Routing](#nextjs-dynamic-routing) - `nextjs` `routing` `dynamic`
-- [Next.js Caching Strategies](#nextjs-caching-strategies) - `nextjs` `caching` `isr`
-- [Next.js Coolify Deployment](#nextjs-coolify-deployment) - `nextjs` `deployment` `coolify`
+- [React Core ](#react-core) - `react` `hooks` `state` `query`
+- [Next.js ](#nextjs) - `nextjs` `routing` `ssr` `isr` `dynamic` `caching`
+- [Next.js  Deployment Options](#nextjs-deployment) - `nextjs` `deployment` `coolify` `cloudflare`
 - [TanStack Query Basics](#tanstack-query-basics) - `react` `tanstack` `data-fetching`
-- [TanStack Router](#tanstack-router) - `react` `tanstack` `routing`
+- [TanStack Start Framework](#tanstack-start) - `react` `tanstack-start` `routing` `tanstack-ecosystem`
 
 ### Backend
-- [HTTP Fundamentals](#http-fundamentals) - `http` `protocols` `networking`
-- [Routing Patterns](#routing-patterns) - `routing` `api-design`
+- [API Design](#api-design) - `api` `bun` `restAPI`
+- [Backend Fundamentals](#backend-fundamentals) - `http` `protocols` `networking` `routing`
 - [TypeScript Backend](#typescript-backend) - `typescript` `nodejs` `backend`
 - [Bun Backend](#bun-backend) - `bun` `typescript` `performance`
 - [Kafka](#kafka) - `kafka` `messaging` `event-streaming`
 - [Redis](#redis) - `redis` `caching` `data-store`
 - [PostgreSQL](#postgresql) - `postgresql` `sql` `database`
+- [Graphql](#graphql) - `graphql`
 - [MongoDB](#mongodb) - `mongodb` `nosql` `database`
 
 ### Fullstack
+- [React with Bun](#react-bun) - `performance`
+- [WebSockets Fundamentals](#websockets-fundamentals) - `websockets` `realtime` `protocols`
 - [Chat App](#chat-app) - `react` `websockets` `realtime` `fullstack`
 - [tRPC Integration](#trpc-integration) - `trpc` `typescript` `api`
 - [WebSockets App](#websockets-app) - `websockets` `realtime` `nodejs`
@@ -40,8 +40,9 @@ A comprehensive collection of projects, experiments, and learning resources cove
 
 ### Infrastructure
 - [Docker Basic + Deployment-cloud + docker Pipeline](#docker-core) - `docker` `containers` `deployment` `cloud` `digitalocean` 
+- [Cloud Infra](#cloud-core) - `aws` `digital Ocean` `Coolify` `vercel` `serverless`
 - [GitHub Actions](#github-actions) - `ci-cd` `github` `automation`
-- [Prometheus + Grafana](#prometheus) - `monitoring` `metrics` `observability + visualization`
+- [Prometheus + Grafana](#prometheus) - `LGTM stack` `monitoring` `metrics` `observability + visualization`
 - [ELK](#observability) - `Elasticsearch` `Logstash` `Kibana`
 - [Turborepo](#turborepo) - `monorepo` `build-tools`
 
@@ -65,8 +66,6 @@ A comprehensive collection of projects, experiments, and learning resources cove
 - [LLM Workflows](#llm-workflows) - `llm` `workflows` `automation`
 - [Agents Basics](#agents-basics) - `ai` `agents` `autonomous`
 
-### Concepts
-- [WebSockets Fundamentals](#websockets-fundamentals) - `websockets` `realtime` `protocols`
 
 ### Git Learning
 - [Branching Strategies](#branching-strategies) - `git` `branching` `workflows`
@@ -80,7 +79,7 @@ A comprehensive collection of projects, experiments, and learning resources cove
 `languages/javascript` → `languages/typescript` → `frontend/react` → `frontend/nextjs`
 
 **Backend Development Track:**  
-`languages/typescript` → `backend/http-fundamentals` → `backend/routing-patterns` → `backend/typescript-backend`
+`languages/typescript` → `backend/backend-fundamentals` → `backend/typescript-backend`
 
 **Fullstack Development Track:**  
 `frontend/react` → `backend/typescript-backend` → `fullstack/auth-implementation` → `fullstack/chat-app`
