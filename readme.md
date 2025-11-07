@@ -13,10 +13,10 @@ A comprehensive collection of projects, experiments, and learning resources cove
 - [Rust Fundamentals](#rust-fundamentals) - `rust` `memory-safety`
 
 ### Frontend
-- [React Core ](#react-core) - `react` `hooks` `state` `query`
+- [React Core ](#react-core) - `react` `hooks` `state` `react-query`
 - [Next.js ](#nextjs) - `nextjs` `routing` `ssr` `isr` `dynamic` `caching`
 - [Next.js  Deployment Options](#nextjs-deployment) - `nextjs` `deployment` `coolify` `cloudflare`
-- [TanStack Query Basics](#tanstack-query-basics) - `react` `tanstack` `data-fetching`
+
 - [TanStack Start Framework](#tanstack-start) - `react` `tanstack-start` `routing` `tanstack-ecosystem`
 
 ### Backend
@@ -41,7 +41,6 @@ A comprehensive collection of projects, experiments, and learning resources cove
 ### Infrastructure
 - [Docker Basic + Deployment-cloud + docker Pipeline](#docker-core) - `docker` `containers` `deployment` `cloud` `digitalocean` 
 - [Cloud Infra](#cloud-core) - `aws` `digital Ocean` `Coolify` `vercel` `serverless`
-- [GitHub Actions](#github-actions) - `ci-cd` `github` `automation`
 - [Prometheus + Grafana](#prometheus) - `LGTM stack` `monitoring` `metrics` `observability + visualization`
 - [ELK](#observability) - `Elasticsearch` `Logstash` `Kibana`
 - [Turborepo](#turborepo) - `monorepo` `build-tools`
@@ -49,17 +48,18 @@ A comprehensive collection of projects, experiments, and learning resources cove
 ### System Design
 - [URL Shortener](#url-shortener) - `system-design` `distributed-systems`
 - [Rate Limiter](#rate-limiter) - `system-design` `algorithms`
+- [distributed cache](#distributed-cache)
+- [load-balancer](#load-balancer)
 
 ### DSA
-- [Arrays](#arrays) - `dsa` `data-structures` `arrays`
-- [Linked Lists](#linked-lists) - `dsa` `data-structures` `linked-lists`
-- [Trees](#trees) - `dsa` `data-structures` `trees`
-- [Sliding Window](#sliding-window) - `dsa` `patterns` `algorithms`
-- [Two Pointers](#two-pointers) - `dsa` `patterns` `algorithms`
+- [data-structures](#data-structures) - `dsa` `data-structures` `arrays` `graph` `heaps` `linked-list` `trees`
 
-### Computer Science Fundamentals
-- [HTTP Server Implementation](#http-server-implementation) - `networking` `http` `sockets`
-- [TCP Chat](#tcp-chat) - `networking` `tcp` `protocols`
+- [Patterns](#dsa-patterns) - `backtracking` `DP` `slding-window` `two-pointers` `algorithms`
+
+### CS Fundamentals
+- [Databases](#databases) - `db` `design` `building`
+- [networking](#networking) - `networking` `tcp` `protocols` `osi model`
+- [memory](#memory) 
 
 ### AI/ML
 - [AI SDK](#ai-sdk) - `ai` `llm` `sdk`
@@ -67,9 +67,10 @@ A comprehensive collection of projects, experiments, and learning resources cove
 - [Agents Basics](#agents-basics) - `ai` `agents` `autonomous`
 
 
-### Git Learning
+### Git and Github Learning with CI/CD pipelines
 - [Branching Strategies](#branching-strategies) - `git` `branching` `workflows`
-- [Rebase Practice](#rebase-practice) - `git` `rebase` `history`
+- [basic-workflows](#basic-workflows) - `git` `rebase` `history`
+- [advance-workflows](#advance-workflows) - `git` `rebase` `history`
 
 ---
 
@@ -187,103 +188,71 @@ Understanding Rust's ownership model, borrowing, lifetimes, traits, and memory s
 
 **[→ View Frontend README](./frontend/README.md)**
 
-### React State Management
-**Path:** `frontend/react/state-management/`
+### React core
+**Path:** `frontend/react/`
 
-Exploring different state management approaches in React including useState, useReducer, Context API, and state management libraries. Understanding when to use local vs global state and state lifting patterns.
+Exploring react and hooks with  state management approaches in React including useState, useReducer, Context API, and state management libraries with react query/tanstack query and zod and zustand
+
+Understanding TanStack Query (React Query) for server state management, caching, background refetching, and optimistic updates. Managing async data with minimal boilerplate.
 
 **📖 Articles**
 - [React Documentation - Managing State](https://react.dev/learn/managing-state)
 - [State Management in React](https://www.robinwieruch.de/react-state/)
+- [TanStack Query Docs](https://tanstack.com/query/latest/docs/react/overview)
+- [React Query Tutorial](https://tkdodo.eu/blog/practical-react-query)
 
 **🎥 YouTube**
 - [React State Management Tutorial](https://www.youtube.com/watch?v=35lXWvCuM8o)
 - [Context API Deep Dive](https://www.youtube.com/watch?v=5LrDIWkK_Bc)
+- [React Query Tutorial](https://www.youtube.com/watch?v=novnyCaa7To)
+- [TanStack Query Deep Dive](https://www.youtube.com/watch?v=8K1N3fE-cDs)
 
 **📚 References**
 - [React Docs - State](https://react.dev/reference/react/useState)
 - [Redux Documentation](https://redux.js.org/)
+- [TanStack Query Documentation](https://tanstack.com/query)
+- [React Query Examples](https://tanstack.com/query/latest/docs/react/examples/simple)
+
 
 ---
 
-### React with Bun
-**Path:** `frontend/react/react-with-bun/`
-
-Setting up and building React applications using Bun as the JavaScript runtime and bundler. Exploring the performance benefits and developer experience improvements with Bun.
-
-**📖 Articles**
-- [Bun Documentation](https://bun.sh/docs)
-- [Why Bun is Fast](https://bun.sh/blog/bun-v1.0)
-
-**🎥 YouTube**
-- [Bun Complete Tutorial](https://www.youtube.com/watch?v=dWqNgzZwVJQ)
-- [React with Bun Setup](https://www.youtube.com/watch?v=3j37M1IMV_s)
-
-**📚 References**
-- [Bun Official Docs](https://bun.sh/)
-- [Bun GitHub Repository](https://github.com/oven-sh/bun)
-
 ---
 
-### Next.js Routing Basics
-**Path:** `frontend/nextjs/routing-basics/`
+### Nextjs
+**Path:** `frontend/nextjs/`
 
-Understanding Next.js file-based routing system, pages directory structure, navigation between routes, and the Link component. Foundation for building Next.js applications.
-
-**📖 Articles**
-- [Next.js Routing Documentation](https://nextjs.org/docs/routing/introduction)
-- [Understanding Next.js Routing](https://www.freecodecamp.org/news/nextjs-routing-tutorial/)
-
-**🎥 YouTube**
-- [Next.js Routing Tutorial](https://www.youtube.com/watch?v=ZjAqacIC_3c)
-- [Next.js App Router](https://www.youtube.com/watch?v=gSSsZReIFRk)
-
-**📚 References**
-- [Next.js Official Documentation](https://nextjs.org/docs)
-- [Next.js Examples](https://github.com/vercel/next.js/tree/canary/examples)
-
----
-
-### Next.js Dynamic Routing
-**Path:** `frontend/nextjs/dynamic-routing/`
-
-Implementing dynamic routes using brackets notation, catch-all routes, optional catch-all routes, and accessing route parameters. Building flexible routing patterns for content-driven applications.
-
-**📖 Articles**
-- [Next.js Dynamic Routes](https://nextjs.org/docs/routing/dynamic-routes)
-- [Advanced Routing Patterns](https://vercel.com/guides/nextjs-dynamic-routing)
-
-**🎥 YouTube**
-- [Dynamic Routes in Next.js](https://www.youtube.com/watch?v=fnpmR6Q5lEc)
-- [Dynamic Routing Deep Dive](https://www.youtube.com/watch?v=3RYsHDzZKKc)
-
-**📚 References**
-- [Next.js Routing Docs](https://nextjs.org/docs/app/building-your-application/routing)
-
----
-
-### Next.js Caching Strategies
-**Path:** `frontend/nextjs/caching-strategies/`
+Understanding Next.js file-based routing system, pages directory structure, navigation between routes, caching and the Link component. Foundation for building Next.js applications. with dynamic routing etc
 
 Learning about Next.js caching mechanisms including ISR (Incremental Static Regeneration), SSG (Static Site Generation), revalidation strategies, and cache control headers for optimal performance.
 
 **📖 Articles**
+- [Next.js Routing Documentation](https://nextjs.org/docs/routing/introduction)
+- [Understanding Next.js Routing](https://www.freecodecamp.org/news/nextjs-routing-tutorial/)
+- [Next.js Dynamic Routes](https://nextjs.org/docs/routing/dynamic-routes)
+- [Advanced Routing Patterns](https://vercel.com/guides/nextjs-dynamic-routing)
 - [Next.js Caching Documentation](https://nextjs.org/docs/app/building-your-application/caching)
 - [ISR Explained](https://vercel.com/docs/concepts/next.js/incremental-static-regeneration)
 
 **🎥 YouTube**
+- [Next.js Routing Tutorial](https://www.youtube.com/watch?v=ZjAqacIC_3c)
+- [Next.js App Router](https://www.youtube.com/watch?v=gSSsZReIFRk)
+- [Dynamic Routes in Next.js](https://www.youtube.com/watch?v=fnpmR6Q5lEc)
+- [Dynamic Routing Deep Dive](https://www.youtube.com/watch?v=3RYsHDzZKKc)
 - [Next.js Caching Strategies](https://www.youtube.com/watch?v=VBlSe8tvg4U)
 - [ISR in Next.js](https://www.youtube.com/watch?v=nrfuN_Hyd3Y)
 
 **📚 References**
+- [Next.js Official Documentation](https://nextjs.org/docs)
+- [Next.js Examples](https://github.com/vercel/next.js/tree/canary/examples)
 - [Next.js Data Fetching](https://nextjs.org/docs/basic-features/data-fetching)
 
 ---
 
-### Next.js Coolify Deployment
-**Path:** `frontend/nextjs/deployment-coolify/`
 
-Deploying Next.js applications to Coolify, a self-hosted PaaS alternative. Understanding the deployment pipeline, environment variables, and managing production builds.
+### Next.js deployment options
+**Path:** `frontend/nextjs/deployment-methods`
+
+Deploying Next.js applications to Coolify, cloudflare a self-hosted PaaS alternative. Understanding the deployment pipeline, environment variables, and managing production builds.
 
 **📖 Articles**
 - [Coolify Documentation](https://coolify.io/docs)
@@ -299,29 +268,11 @@ Deploying Next.js applications to Coolify, a self-hosted PaaS alternative. Under
 
 ---
 
-### TanStack Query Basics
-**Path:** `frontend/tanstack/query-basics/`
 
-Understanding TanStack Query (React Query) for server state management, caching, background refetching, and optimistic updates. Managing async data with minimal boilerplate.
+### TanStack start framework
+**Path:** `frontend/tanstack/`
 
-**📖 Articles**
-- [TanStack Query Docs](https://tanstack.com/query/latest/docs/react/overview)
-- [React Query Tutorial](https://tkdodo.eu/blog/practical-react-query)
-
-**🎥 YouTube**
-- [React Query Tutorial](https://www.youtube.com/watch?v=novnyCaa7To)
-- [TanStack Query Deep Dive](https://www.youtube.com/watch?v=8K1N3fE-cDs)
-
-**📚 References**
-- [TanStack Query Documentation](https://tanstack.com/query)
-- [React Query Examples](https://tanstack.com/query/latest/docs/react/examples/simple)
-
----
-
-### TanStack Router
-**Path:** `frontend/tanstack/router/`
-
-Exploring TanStack Router for type-safe routing in React applications. Understanding route definitions, nested routes, route loaders, and search params validation.
+Exploring TanStack Router and tanstack start for type-safe routing in React applications. Understanding route definitions, nested routes, route loaders, and search params validation.
 
 **📖 Articles**
 - [TanStack Router Docs](https://tanstack.com/router/latest)
@@ -340,40 +291,41 @@ Exploring TanStack Router for type-safe routing in React applications. Understan
 
 **[→ View Backend README](./backend/README.md)**
 
-### HTTP Fundamentals
-**Path:** `backend/http-fundamentals/`
+### API Design
+**Path:** `backend/api-design/`
 
-Deep dive into HTTP protocol, request/response cycle, methods, status codes, headers, cookies, and sessions. Understanding how the web works at the protocol level.
+Deep dive into api design HTTP protocol, request/response cycle, methods, status codes, headers, cookies, and sessions. Understanding how the api design for better performance
 
 **📖 Articles**
-- [MDN HTTP Guide](https://developer.mozilla.org/en-US/docs/Web/HTTP)
-- [HTTP/1.1 Specification](https://datatracker.ietf.org/doc/html/rfc2616)
+
 
 **🎥 YouTube**
-- [HTTP Crash Course](https://www.youtube.com/watch?v=iYM2zFP3Zn0)
-- [Understanding HTTP Requests](https://www.youtube.com/watch?v=pHFWGN-upGM)
+
 
 **📚 References**
 - [HTTP/2 Documentation](https://http2.github.io/)
 - [RESTful API Design](https://restfulapi.net/)
+- [API Design Patterns](https://swagger.io/resources/articles/best-practices-in-api-design/)
 
 ---
 
-### Routing Patterns
-**Path:** `backend/routing-patterns/`
+### Backend Fundamentals
+**Path:** `backend/backend-fundamentals/`
 
 Exploring different routing patterns in backend applications including RESTful routing, nested routes, route parameters, middleware integration, and route organization strategies.
+
+- [Backend from First Principles for in depth understanding](https://www.youtube.com/playlist?list=PLui3EUkuMTPgZcV0QhQrOcwMPcBCcd_Q1)
 
 **📖 Articles**
 - [Express Routing Guide](https://expressjs.com/en/guide/routing.html)
 - [REST API Routing Best Practices](https://www.freecodecamp.org/news/rest-api-design-best-practices-build-a-rest-api/)
 
 **🎥 YouTube**
-- [Express Routing Tutorial](https://www.youtube.com/watch?v=pKd0Rpw7O48)
+
 - [REST API Design](https://www.youtube.com/watch?v=0oXYLzuucwE)
 
-**📚 References**
-- [API Design Patterns](https://swagger.io/resources/articles/best-practices-in-api-design/)
+
+
 
 ---
 
@@ -494,41 +446,29 @@ Learning MongoDB NoSQL database including document modeling, CRUD operations, ag
 
 **[→ View Fullstack README](./fullstack/README.md)**
 
-### Chat App
-**Path:** `fullstack/chat-app/`
+### Bun Backend
+**Path:** `backend/bun-backend/`
 
-Building a real-time chat application using React frontend with WebSockets for bi-directional communication. Implementing features like message history, typing indicators, online status, and user authentication.
+Building backend applications using Bun runtime. Exploring Bun's built-in HTTP server, file system APIs, SQLite integration, and performance optimizations compared to Node.js.
 
 **📖 Articles**
-- [Building Real-time Apps](https://www.pubnub.com/guides/websockets/)
-- [WebSocket Chat Tutorial](https://socket.io/get-started/chat)
+- [Bun HTTP Server](https://bun.sh/docs/api/http)
+- [Building APIs with Bun](https://bun.sh/guides/http/server)
 
 **🎥 YouTube**
-- [Build a Chat App](https://www.youtube.com/watch?v=ZKEqqIO7n-k)
-- [WebSocket Chat Tutorial](https://www.youtube.com/watch?v=rxzOqP9YwmM)
+- [Bun Backend Tutorial](https://www.youtube.com/watch?v=dWqNgzZwVJQ)
+- [Bun vs Node Performance](https://www.youtube.com/watch?v=FMhScnY0dME)
 
 **📚 References**
-- [Socket.io Documentation](https://socket.io/docs/)
-- [WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)
+- [Bun API Documentation](https://bun.sh/docs)
 
 ---
+
 
 ### tRPC Integration
 **Path:** `fullstack/trpc-integration/`
 
 Implementing end-to-end type-safe APIs with tRPC. Building React frontend that consumes tRPC backend with full TypeScript inference, no code generation, and excellent developer experience.
-
-**📖 Articles**
-- [tRPC Documentation](https://trpc.io/docs)
-- [Introduction to tRPC](https://www.robinwieruch.de/react-trpc/)
-
-**🎥 YouTube**
-- [tRPC Tutorial](https://www.youtube.com/watch?v=UfUbBWIFdJs)
-- [Building Apps with tRPC](https://www.youtube.com/watch?v=2LYM8gf184U)
-
-**📚 References**
-- [tRPC Official Docs](https://trpc.io/)
-- [tRPC Examples](https://github.com/trpc/trpc/tree/main/examples)
 
 ---
 
@@ -537,36 +477,12 @@ Implementing end-to-end type-safe APIs with tRPC. Building React frontend that c
 
 Creating a fullstack application with WebSocket connections for real-time features. Understanding WebSocket lifecycle, connection management, reconnection strategies, and scaling WebSocket servers.
 
-**📖 Articles**
-- [WebSockets Guide](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
-- [WebSocket Best Practices](https://ably.com/topic/websockets)
-
-**🎥 YouTube**
-- [WebSockets Tutorial](https://www.youtube.com/watch?v=1BfCnjr_Vjg)
-- [Real-time with WebSockets](https://www.youtube.com/watch?v=i5OVcTdt_OU)
-
-**📚 References**
-- [WebSocket Protocol RFC](https://datatracker.ietf.org/doc/html/rfc6455)
-- [ws Library Documentation](https://github.com/websockets/ws)
-
 ---
 
 ### Auth Implementation
 **Path:** `fullstack/auth-implementation/`
 
 Implementing authentication and authorization in fullstack applications. Understanding JWT tokens, refresh tokens, session management, OAuth integration, password hashing, and security best practices for both frontend and backend.
-
-**📖 Articles**
-- [JWT Authentication Guide](https://jwt.io/introduction)
-- [Authentication Best Practices](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
-
-**🎥 YouTube**
-- [JWT Authentication Tutorial](https://www.youtube.com/watch?v=mbsmsi7l3r4)
-- [OAuth 2.0 Explained](https://www.youtube.com/watch?v=996OiexHze0)
-
-**📚 References**
-- [Passport.js Documentation](http://www.passportjs.org/)
-- [Auth0 Documentation](https://auth0.com/docs)
 
 ---
 
@@ -612,38 +528,33 @@ Deploying Dockerized applications to DigitalOcean droplets and container registr
 
 ---
 
+### Cloud Core
+**Path:** `infrastructure/cloud/`
 
-### GitHub Actions
-**Path:** `infrastructure/ci-cd/github-actions/`
-
-Implementing CI/CD pipelines with GitHub Actions including automated testing, building, deployment workflows, secrets management, and matrix builds for multiple environments.
-
-**📖 Articles**
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
-- [CI/CD with GitHub Actions](https://github.blog/2019-08-08-github-actions-now-supports-ci-cd/)
-
-**🎥 YouTube**
-- [GitHub Actions Tutorial](https://www.youtube.com/watch?v=R8_veQiYBjI)
-- [CI/CD Pipeline with GitHub Actions](https://www.youtube.com/watch?v=mFFXuXjVgkU)
-
-**📚 References**
-- [GitHub Actions Marketplace](https://github.com/marketplace?type=actions)
-- [Workflow Syntax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
+understanding and building projects using aws, using depolyment with digital ocean and how to's and coolify for next js with vercel and serverless understanding
 
 ---
 
-### Prometheus
-**Path:** `infrastructure/observability/prometheus/`
+
+### Prometheus + Grafana
+**Path:** `infrastructure/observability/`
 
 Setting up Prometheus for metrics collection and monitoring. Understanding time-series data, PromQL query language, exporters, and configuring alerts for infrastructure and application monitoring.
+
+
+Building monitoring dashboards with Grafana for visualizing metrics from Prometheus and other data sources. Creating custom dashboards, alerts, and understanding data visualization best practices.
 
 **📖 Articles**
 - [Prometheus Documentation](https://prometheus.io/docs/introduction/overview/)
 - [Getting Started with Prometheus](https://prometheus.io/docs/prometheus/latest/getting_started/)
+- [Grafana Documentation](https://grafana.com/docs/grafana/latest/)
+- [Grafana Getting Started](https://grafana.com/docs/grafana/latest/getting-started/)
 
 **🎥 YouTube**
 - [Prometheus Monitoring Tutorial](https://www.youtube.com/watch?v=h4Sl21AKiDg)
 - [Prometheus Complete Course](https://www.youtube.com/watch?v=7gW5pSM6dlU)
+- [Grafana Crash Course](https://www.youtube.com/watch?v=QDqbdPZEON4)
+- [Grafana Dashboards Tutorial](https://www.youtube.com/watch?v=Eiq7sLppLlw)
 
 **📚 References**
 - [Prometheus Official Site](https://prometheus.io/)
@@ -651,41 +562,13 @@ Setting up Prometheus for metrics collection and monitoring. Understanding time-
 
 ---
 
-### Grafana
-**Path:** `infrastructure/observability/grafana/`
-
-Building monitoring dashboards with Grafana for visualizing metrics from Prometheus and other data sources. Creating custom dashboards, alerts, and understanding data visualization best practices.
-
-**📖 Articles**
-- [Grafana Documentation](https://grafana.com/docs/grafana/latest/)
-- [Grafana Getting Started](https://grafana.com/docs/grafana/latest/getting-started/)
-
-**🎥 YouTube**
-- [Grafana Crash Course](https://www.youtube.com/watch?v=QDqbdPZEON4)
-- [Grafana Dashboards Tutorial](https://www.youtube.com/watch?v=Eiq7sLppLlw)
-
-**📚 References**
-- [Grafana Official Site](https://grafana.com/)
-- [Grafana Dashboard Gallery](https://grafana.com/grafana/dashboards/)
-
----
 
 ### Turborepo
 **Path:** `infrastructure/monorepos/turborepo/`
 
 Experimenting with Turborepo for managing monorepos. Understanding task orchestration, caching, remote caching, and organizing multiple packages and applications in a single repository.
 
-**📖 Articles**
-- [Turborepo Documentation](https://turbo.build/repo/docs)
-- [Why Turborepo](https://vercel.com/blog/turbo)
 
-**🎥 YouTube**
-- [Turborepo Tutorial](https://www.youtube.com/watch?v=9iU_IE6vnJ8)
-- [Monorepo with Turborepo](https://www.youtube.com/watch?v=YQLw5kJ1yrQ)
-
-**📚 References**
-- [Turborepo Official Docs](https://turbo.build/)
-- [Turborepo Examples](https://github.com/vercel/turbo/tree/main/examples)
 
 ---
 
@@ -694,40 +577,13 @@ Experimenting with Turborepo for managing monorepos. Understanding task orchestr
 **[→ View System Design README](./system-design/README.md)**
 
 ### URL Shortener
-**Path:** `system-design/url-shortener/`
-
-Designing and implementing a URL shortening service. Understanding system design concepts including ID generation, database sharding, caching strategies, rate limiting, and handling high traffic. Includes both theoretical design and practical implementation.
-
-**📖 Articles**
-- [Designing a URL Shortener](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/system-design-tinyurl)
-- [URL Shortener System Design](https://systemdesign.one/url-shortening-system-design/)
-
-**🎥 YouTube**
-- [URL Shortener System Design](https://www.youtube.com/watch?v=fMZMm_0ZhK4)
-- [Building a URL Shortener](https://www.youtube.com/watch?v=AVztRY77xxA)
-
-**📚 References**
-- [System Design Primer](https://github.com/donnemartin/system-design-primer)
-- [Base62 Encoding](https://www.khanacademy.org/computing/computer-science/cryptography/ciphers/a/base-62-encoding)
-
----
-
 ### Rate Limiter
-**Path:** `system-design/rate-limiter/`
+### Distributed cache
+### Load balancer
+**Path:** `system-design/*/`
 
-Designing and building a rate limiting system. Understanding different rate limiting algorithms (token bucket, leaky bucket, sliding window), distributed rate limiting, and protecting APIs from abuse.
 
-**📖 Articles**
-- [Rate Limiting Algorithms](https://blog.algomaster.io/p/rate-limiting-algorithms-explained-with-code)
-- [Distributed Rate Limiting](https://engineering.grab.com/frequency-capping)
 
-**🎥 YouTube**
-- [Rate Limiter System Design](https://www.youtube.com/watch?v=mhUQe4BKZXs)
-- [Building a Rate Limiter](https://www.youtube.com/watch?v=FU4WlwfS3G0)
-
-**📚 References**
-- [Redis Rate Limiting](https://redis.io/docs/manual/patterns/rate-limiter/)
-- [API Gateway Rate Limiting](https://docs.nginx.com/nginx/admin-guide/security-controls/controlling-access-proxied-http/)
 
 ---
 
@@ -735,98 +591,17 @@ Designing and building a rate limiting system. Understanding different rate limi
 
 **[→ View DSA README](./dsa/README.md)**
 
-### Arrays
-**Path:** `dsa/data-structures/arrays/`
+### Data structures
+**Path:** `dsa/data-structures/`
 
 Fundamental array operations and problems including searching, sorting, two-pointer techniques, prefix sums, and array manipulation. Building strong foundations for algorithmic problem-solving.
 
-**📖 Articles**
-- [Array Data Structure](https://www.geeksforgeeks.org/array-data-structure/)
-- [Array Interview Problems](https://www.techinterviewhandbook.org/algorithms/array/)
+### DSA patterns
+**Path:** `dsa/patterns/`
 
-**🎥 YouTube**
-- [Array Problems and Solutions](https://www.youtube.com/watch?v=bD8RT0ub--0)
-- [Arrays in DSA](https://www.youtube.com/watch?v=gDqQf4Ekr2A)
+Patterns like backtracking, dynamic programming, sliding window, two pointers with algorithmic applications
 
-**📚 References**
-- [LeetCode Arrays](https://leetcode.com/tag/array/)
-- [Array Algorithms](https://cp-algorithms.com/data_structures/array.html)
 
----
-
-### Linked Lists
-**Path:** `dsa/data-structures/linked-lists/`
-
-Understanding linked list operations including insertion, deletion, reversal, cycle detection, and solving problems with slow-fast pointer technique. Implementing singly and doubly linked lists.
-
-**📖 Articles**
-- [Linked List Data Structure](https://www.geeksforgeeks.org/data-structures/linked-list/)
-- [Linked List Problems](https://www.techinterviewhandbook.org/algorithms/linked-list/)
-
-**🎥 YouTube**
-- [Linked List Tutorial](https://www.youtube.com/watch?v=Nq7ok-OyEpg)
-- [Linked List Problems](https://www.youtube.com/watch?v=R9PTBwOzceo)
-
-**📚 References**
-- [LeetCode Linked List](https://leetcode.com/tag/linked-list/)
-- [Visualgo Linked List](https://visualgo.net/en/list)
-
----
-
-### Trees
-**Path:** `dsa/data-structures/trees/`
-
-Binary trees, binary search trees, tree traversals (inorder, preorder, postorder, level-order), tree properties, and common tree problems. Understanding recursion through tree problems.
-
-**📖 Articles**
-- [Tree Data Structure](https://www.geeksforgeeks.org/binary-tree-data-structure/)
-- [Tree Interview Problems](https://www.techinterviewhandbook.org/algorithms/tree/)
-
-**🎥 YouTube**
-- [Trees in DSA](https://www.youtube.com/watch?v=fAAZixBzIAI)
-- [Binary Tree Problems](https://www.youtube.com/watch?v=H5JubkIy_p8)
-
-**📚 References**
-- [LeetCode Trees](https://leetcode.com/tag/tree/)
-- [Tree Algorithms](https://cp-algorithms.com/data_structures/trees.html)
-
----
-
-### Sliding Window
-**Path:** `dsa/patterns/sliding-window/`
-
-Mastering the sliding window pattern for solving problems involving subarrays or substrings. Understanding fixed and variable-size windows, and optimizing brute force solutions.
-
-**📖 Articles**
-- [Sliding Window Technique](https://www.geeksforgeeks.org/window-sliding-technique/)
-- [Sliding Window Pattern](https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/1175088/C++-Maximum-Sliding-Window-Cheatsheet-Template/)
-
-**🎥 YouTube**
-- [Sliding Window Tutorial](https://www.youtube.com/watch?v=jM2dhDPYMQM)
-- [Sliding Window Problems](https://www.youtube.com/watch?v=EHCGAZBbB88)
-
-**📚 References**
-- [LeetCode Sliding Window](https://leetcode.com/tag/sliding-window/)
-- [Pattern Guide](https://medium.com/outco/how-to-solve-sliding-window-problems-28d67601a66)
-
----
-
-### Two Pointers
-**Path:** `dsa/patterns/two-pointers/`
-
-Learning the two-pointer technique for solving array and linked list problems efficiently. Understanding different variations including opposite direction, same direction, and fast-slow pointers.
-
-**📖 Articles**
-- [Two Pointers Technique](https://www.geeksforgeeks.org/two-pointers-technique/)
-- [Two Pointer Problems](https://leetcode.com/discuss/study-guide/1688903/Solved-all-two-pointers-problems-in-100-days)
-
-**🎥 YouTube**
-- [Two Pointers Tutorial](https://www.youtube.com/watch?v=On03HWe2tZM)
-- [Two Pointer Pattern](https://www.youtube.com/watch?v=Qyz0lhKXxM8)
-
-**📚 References**
-- [LeetCode Two Pointers](https://leetcode.com/tag/two-pointers/)
-- [Pattern Examples](https://emre.me/coding-patterns/two-pointers/)
 
 ---
 
@@ -834,41 +609,9 @@ Learning the two-pointer technique for solving array and linked list problems ef
 
 **[→ View CS Fundamentals README](./cs-fundamentals/README.md)**
 
-### HTTP Server Implementation
-**Path:** `cs-fundamentals/networking/http-server/`
-
-Building an HTTP server from scratch to understand how web servers work at a fundamental level. Parsing HTTP requests, generating responses, handling headers, and implementing basic routing.
-
-**📖 Articles**
-- [Building an HTTP Server](https://ruslanspivak.com/lsbaws-part1/)
-- [HTTP Protocol Internals](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
-
-**🎥 YouTube**
-- [Build HTTP Server from Scratch](https://www.youtube.com/watch?v=7GBlCinu9yg)
-- [Understanding HTTP](https://www.youtube.com/watch?v=iYM2zFP3Zn0)
-
-**📚 References**
-- [HTTP/1.1 RFC](https://datatracker.ietf.org/doc/html/rfc2616)
-- [Node.js HTTP Module](https://nodejs.org/api/http.html)
-
----
-
-### TCP Chat
-**Path:** `cs-fundamentals/networking/tcp-chat/`
-
-Implementing a TCP-based chat application to understand socket programming, TCP protocol, client-server architecture, and handling multiple concurrent connections.
-
-**📖 Articles**
-- [TCP Socket Programming](https://www.geeksforgeeks.org/socket-programming-cc/)
-- [Understanding TCP](https://www.cloudflare.com/learning/ddos/glossary/tcp-ip/)
-
-**🎥 YouTube**
-- [TCP Socket Programming](https://www.youtube.com/watch?v=LtXEMwSG5-8)
-- [Building a Chat Server](https://www.youtube.com/watch?v=8ARodQ4Wlf4)
-
-**📚 References**
-- [TCP RFC](https://datatracker.ietf.org/doc/html/rfc793)
-- [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/)
+Databases
+Networking
+Memory
 
 ---
 
@@ -933,30 +676,8 @@ Understanding AI agents including autonomous decision-making, tool usage, planni
 
 ---
 
-## Concepts
 
-**[→ View Concepts README](./concepts/README.md)**
-
-### WebSockets Fundamentals
-**Path:** `concepts/websockets/`
-
-Deep dive into WebSocket protocol, understanding the WebSocket handshake, message framing, connection lifecycle, and differences between WebSockets and HTTP. Foundation for real-time applications.
-
-**📖 Articles**
-- [WebSocket Protocol](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
-- [Understanding WebSockets](https://ably.com/topic/websockets)
-
-**🎥 YouTube**
-- [WebSockets Explained](https://www.youtube.com/watch?v=1BfCnjr_Vjg)
-- [WebSocket Protocol Deep Dive](https://www.youtube.com/watch?v=i5OVcTdt_OU)
-
-**📚 References**
-- [WebSocket RFC 6455](https://datatracker.ietf.org/doc/html/rfc6455)
-- [MDN WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)
-
----
-
-## Git Learning
+## Git and Gihub Learning with CI/CD pipelines
 
 **[→ View Git Learning README](./git-learning/README.md)**
 
@@ -977,24 +698,7 @@ Learning different Git branching strategies including Git Flow, GitHub Flow, tru
 - [Atlassian Git Branching](https://www.atlassian.com/git/tutorials/comparing-workflows)
 - [Git Documentation](https://git-scm.com/doc)
 
----
 
-### Rebase Practice
-**Path:** `git-learning/rebase-practice/`
-
-Mastering Git rebase for maintaining clean commit history. Understanding interactive rebase, squashing commits, reordering commits, and resolving rebase conflicts safely.
-
-**📖 Articles**
-- [Git Rebase Documentation](https://git-scm.com/docs/git-rebase)
-- [Rebase vs Merge](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
-
-**🎥 YouTube**
-- [Git Rebase Tutorial](https://www.youtube.com/watch?v=f1wnYdLEpgI)
-- [Interactive Rebase](https://www.youtube.com/watch?v=tukOm3Afd8s)
-
-**📚 References**
-- [Pro Git Book - Rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
-- [Git Rebase Guide](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
 
 ---
 
@@ -1003,5 +707,3 @@ Mastering Git rebase for maintaining clean commit history. Understanding interac
 Feel free to explore, learn, and contribute! If you find helpful resources or have suggestions for improvements, please open an issue or pull request.
 
 ## License
-
-This repository is for educational purposes. Individual projects may have their own licenses.
