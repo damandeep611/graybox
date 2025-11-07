@@ -658,4 +658,369 @@ Setting up Prometheus for metrics collection and monitoring. Understanding time-
 
 **📖 Articles**
 - [Prometheus Documentation](https://prometheus.io/docs/introduction/overview/)
-- [Getting Started with Prometheus](https://prometheus.io/docs/prometheus/latest
+- [Getting Started with Prometheus](https://prometheus.io/docs/prometheus/latest/getting_started/)
+
+**🎥 YouTube**
+- [Prometheus Monitoring Tutorial](https://www.youtube.com/watch?v=h4Sl21AKiDg)
+- [Prometheus Complete Course](https://www.youtube.com/watch?v=7gW5pSM6dlU)
+
+**📚 References**
+- [Prometheus Official Site](https://prometheus.io/)
+- [PromQL Cheat Sheet](https://promlabs.com/promql-cheat-sheet/)
+
+---
+
+### Grafana
+**Path:** `infrastructure/observability/grafana/`
+
+Building monitoring dashboards with Grafana for visualizing metrics from Prometheus and other data sources. Creating custom dashboards, alerts, and understanding data visualization best practices.
+
+**📖 Articles**
+- [Grafana Documentation](https://grafana.com/docs/grafana/latest/)
+- [Grafana Getting Started](https://grafana.com/docs/grafana/latest/getting-started/)
+
+**🎥 YouTube**
+- [Grafana Crash Course](https://www.youtube.com/watch?v=QDqbdPZEON4)
+- [Grafana Dashboards Tutorial](https://www.youtube.com/watch?v=Eiq7sLppLlw)
+
+**📚 References**
+- [Grafana Official Site](https://grafana.com/)
+- [Grafana Dashboard Gallery](https://grafana.com/grafana/dashboards/)
+
+---
+
+### Turborepo
+**Path:** `infrastructure/monorepos/turborepo/`
+
+Experimenting with Turborepo for managing monorepos. Understanding task orchestration, caching, remote caching, and organizing multiple packages and applications in a single repository.
+
+**📖 Articles**
+- [Turborepo Documentation](https://turbo.build/repo/docs)
+- [Why Turborepo](https://vercel.com/blog/turbo)
+
+**🎥 YouTube**
+- [Turborepo Tutorial](https://www.youtube.com/watch?v=9iU_IE6vnJ8)
+- [Monorepo with Turborepo](https://www.youtube.com/watch?v=YQLw5kJ1yrQ)
+
+**📚 References**
+- [Turborepo Official Docs](https://turbo.build/)
+- [Turborepo Examples](https://github.com/vercel/turbo/tree/main/examples)
+
+---
+
+## System Design
+
+**[→ View System Design README](./system-design/README.md)**
+
+### URL Shortener
+**Path:** `system-design/url-shortener/`
+
+Designing and implementing a URL shortening service. Understanding system design concepts including ID generation, database sharding, caching strategies, rate limiting, and handling high traffic. Includes both theoretical design and practical implementation.
+
+**📖 Articles**
+- [Designing a URL Shortener](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/system-design-tinyurl)
+- [URL Shortener System Design](https://systemdesign.one/url-shortening-system-design/)
+
+**🎥 YouTube**
+- [URL Shortener System Design](https://www.youtube.com/watch?v=fMZMm_0ZhK4)
+- [Building a URL Shortener](https://www.youtube.com/watch?v=AVztRY77xxA)
+
+**📚 References**
+- [System Design Primer](https://github.com/donnemartin/system-design-primer)
+- [Base62 Encoding](https://www.khanacademy.org/computing/computer-science/cryptography/ciphers/a/base-62-encoding)
+
+---
+
+### Rate Limiter
+**Path:** `system-design/rate-limiter/`
+
+Designing and building a rate limiting system. Understanding different rate limiting algorithms (token bucket, leaky bucket, sliding window), distributed rate limiting, and protecting APIs from abuse.
+
+**📖 Articles**
+- [Rate Limiting Algorithms](https://blog.algomaster.io/p/rate-limiting-algorithms-explained-with-code)
+- [Distributed Rate Limiting](https://engineering.grab.com/frequency-capping)
+
+**🎥 YouTube**
+- [Rate Limiter System Design](https://www.youtube.com/watch?v=mhUQe4BKZXs)
+- [Building a Rate Limiter](https://www.youtube.com/watch?v=FU4WlwfS3G0)
+
+**📚 References**
+- [Redis Rate Limiting](https://redis.io/docs/manual/patterns/rate-limiter/)
+- [API Gateway Rate Limiting](https://docs.nginx.com/nginx/admin-guide/security-controls/controlling-access-proxied-http/)
+
+---
+
+## DSA
+
+**[→ View DSA README](./dsa/README.md)**
+
+### Arrays
+**Path:** `dsa/data-structures/arrays/`
+
+Fundamental array operations and problems including searching, sorting, two-pointer techniques, prefix sums, and array manipulation. Building strong foundations for algorithmic problem-solving.
+
+**📖 Articles**
+- [Array Data Structure](https://www.geeksforgeeks.org/array-data-structure/)
+- [Array Interview Problems](https://www.techinterviewhandbook.org/algorithms/array/)
+
+**🎥 YouTube**
+- [Array Problems and Solutions](https://www.youtube.com/watch?v=bD8RT0ub--0)
+- [Arrays in DSA](https://www.youtube.com/watch?v=gDqQf4Ekr2A)
+
+**📚 References**
+- [LeetCode Arrays](https://leetcode.com/tag/array/)
+- [Array Algorithms](https://cp-algorithms.com/data_structures/array.html)
+
+---
+
+### Linked Lists
+**Path:** `dsa/data-structures/linked-lists/`
+
+Understanding linked list operations including insertion, deletion, reversal, cycle detection, and solving problems with slow-fast pointer technique. Implementing singly and doubly linked lists.
+
+**📖 Articles**
+- [Linked List Data Structure](https://www.geeksforgeeks.org/data-structures/linked-list/)
+- [Linked List Problems](https://www.techinterviewhandbook.org/algorithms/linked-list/)
+
+**🎥 YouTube**
+- [Linked List Tutorial](https://www.youtube.com/watch?v=Nq7ok-OyEpg)
+- [Linked List Problems](https://www.youtube.com/watch?v=R9PTBwOzceo)
+
+**📚 References**
+- [LeetCode Linked List](https://leetcode.com/tag/linked-list/)
+- [Visualgo Linked List](https://visualgo.net/en/list)
+
+---
+
+### Trees
+**Path:** `dsa/data-structures/trees/`
+
+Binary trees, binary search trees, tree traversals (inorder, preorder, postorder, level-order), tree properties, and common tree problems. Understanding recursion through tree problems.
+
+**📖 Articles**
+- [Tree Data Structure](https://www.geeksforgeeks.org/binary-tree-data-structure/)
+- [Tree Interview Problems](https://www.techinterviewhandbook.org/algorithms/tree/)
+
+**🎥 YouTube**
+- [Trees in DSA](https://www.youtube.com/watch?v=fAAZixBzIAI)
+- [Binary Tree Problems](https://www.youtube.com/watch?v=H5JubkIy_p8)
+
+**📚 References**
+- [LeetCode Trees](https://leetcode.com/tag/tree/)
+- [Tree Algorithms](https://cp-algorithms.com/data_structures/trees.html)
+
+---
+
+### Sliding Window
+**Path:** `dsa/patterns/sliding-window/`
+
+Mastering the sliding window pattern for solving problems involving subarrays or substrings. Understanding fixed and variable-size windows, and optimizing brute force solutions.
+
+**📖 Articles**
+- [Sliding Window Technique](https://www.geeksforgeeks.org/window-sliding-technique/)
+- [Sliding Window Pattern](https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/1175088/C++-Maximum-Sliding-Window-Cheatsheet-Template/)
+
+**🎥 YouTube**
+- [Sliding Window Tutorial](https://www.youtube.com/watch?v=jM2dhDPYMQM)
+- [Sliding Window Problems](https://www.youtube.com/watch?v=EHCGAZBbB88)
+
+**📚 References**
+- [LeetCode Sliding Window](https://leetcode.com/tag/sliding-window/)
+- [Pattern Guide](https://medium.com/outco/how-to-solve-sliding-window-problems-28d67601a66)
+
+---
+
+### Two Pointers
+**Path:** `dsa/patterns/two-pointers/`
+
+Learning the two-pointer technique for solving array and linked list problems efficiently. Understanding different variations including opposite direction, same direction, and fast-slow pointers.
+
+**📖 Articles**
+- [Two Pointers Technique](https://www.geeksforgeeks.org/two-pointers-technique/)
+- [Two Pointer Problems](https://leetcode.com/discuss/study-guide/1688903/Solved-all-two-pointers-problems-in-100-days)
+
+**🎥 YouTube**
+- [Two Pointers Tutorial](https://www.youtube.com/watch?v=On03HWe2tZM)
+- [Two Pointer Pattern](https://www.youtube.com/watch?v=Qyz0lhKXxM8)
+
+**📚 References**
+- [LeetCode Two Pointers](https://leetcode.com/tag/two-pointers/)
+- [Pattern Examples](https://emre.me/coding-patterns/two-pointers/)
+
+---
+
+## Computer Science Fundamentals
+
+**[→ View CS Fundamentals README](./cs-fundamentals/README.md)**
+
+### HTTP Server Implementation
+**Path:** `cs-fundamentals/networking/http-server/`
+
+Building an HTTP server from scratch to understand how web servers work at a fundamental level. Parsing HTTP requests, generating responses, handling headers, and implementing basic routing.
+
+**📖 Articles**
+- [Building an HTTP Server](https://ruslanspivak.com/lsbaws-part1/)
+- [HTTP Protocol Internals](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
+
+**🎥 YouTube**
+- [Build HTTP Server from Scratch](https://www.youtube.com/watch?v=7GBlCinu9yg)
+- [Understanding HTTP](https://www.youtube.com/watch?v=iYM2zFP3Zn0)
+
+**📚 References**
+- [HTTP/1.1 RFC](https://datatracker.ietf.org/doc/html/rfc2616)
+- [Node.js HTTP Module](https://nodejs.org/api/http.html)
+
+---
+
+### TCP Chat
+**Path:** `cs-fundamentals/networking/tcp-chat/`
+
+Implementing a TCP-based chat application to understand socket programming, TCP protocol, client-server architecture, and handling multiple concurrent connections.
+
+**📖 Articles**
+- [TCP Socket Programming](https://www.geeksforgeeks.org/socket-programming-cc/)
+- [Understanding TCP](https://www.cloudflare.com/learning/ddos/glossary/tcp-ip/)
+
+**🎥 YouTube**
+- [TCP Socket Programming](https://www.youtube.com/watch?v=LtXEMwSG5-8)
+- [Building a Chat Server](https://www.youtube.com/watch?v=8ARodQ4Wlf4)
+
+**📚 References**
+- [TCP RFC](https://datatracker.ietf.org/doc/html/rfc793)
+- [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/)
+
+---
+
+## AI/ML
+
+**[→ View AI/ML README](./ai-ml/README.md)**
+
+### AI SDK
+**Path:** `ai-ml/ai-sdk/`
+
+Exploring AI SDK for integrating language models into applications. Understanding streaming responses, prompt engineering, function calling, and building AI-powered features.
+
+**📖 Articles**
+- [Vercel AI SDK Documentation](https://sdk.vercel.ai/docs)
+- [Building AI Apps](https://vercel.com/blog/ai-sdk)
+
+**🎥 YouTube**
+- [AI SDK Tutorial](https://www.youtube.com/watch?v=1MYkB1g9hrU)
+- [Building with AI SDK](https://www.youtube.com/watch?v=kCwtEO6YYE8)
+
+**📚 References**
+- [AI SDK Examples](https://sdk.vercel.ai/examples)
+- [OpenAI API Docs](https://platform.openai.com/docs)
+
+---
+
+### LLM Workflows
+**Path:** `ai-ml/llm-workflows/`
+
+Building complex workflows with large language models including chaining prompts, managing context, implementing RAG (Retrieval Augmented Generation), and orchestrating multi-step AI processes.
+
+**📖 Articles**
+- [LLM Workflow Patterns](https://www.anthropic.com/index/building-effective-agents)
+- [RAG Tutorial](https://www.pinecone.io/learn/retrieval-augmented-generation/)
+
+**🎥 YouTube**
+- [LLM Workflows Explained](https://www.youtube.com/watch?v=1OT_iQAMVJo)
+- [Building RAG Systems](https://www.youtube.com/watch?v=sVcwVQRHIc8)
+
+**📚 References**
+- [LangChain Documentation](https://python.langchain.com/docs/get_started/introduction)
+- [Vector Databases](https://www.pinecone.io/learn/vector-database/)
+
+---
+
+### Agents Basics
+**Path:** `ai-ml/agents-basics/`
+
+Understanding AI agents including autonomous decision-making, tool usage, planning, and building agents that can break down complex tasks and execute them independently.
+
+**📖 Articles**
+- [Introduction to AI Agents](https://www.anthropic.com/index/building-effective-agents)
+- [AI Agent Patterns](https://lilianweng.github.io/posts/2023-06-23-agent/)
+
+**🎥 YouTube**
+- [AI Agents Explained](https://www.youtube.com/watch?v=F8NKVhkZZWI)
+- [Building AI Agents](https://www.youtube.com/watch?v=IgaC9UD6bCU)
+
+**📚 References**
+- [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)
+- [Agent Frameworks Comparison](https://www.langchain.com/agents)
+
+---
+
+## Concepts
+
+**[→ View Concepts README](./concepts/README.md)**
+
+### WebSockets Fundamentals
+**Path:** `concepts/websockets/`
+
+Deep dive into WebSocket protocol, understanding the WebSocket handshake, message framing, connection lifecycle, and differences between WebSockets and HTTP. Foundation for real-time applications.
+
+**📖 Articles**
+- [WebSocket Protocol](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
+- [Understanding WebSockets](https://ably.com/topic/websockets)
+
+**🎥 YouTube**
+- [WebSockets Explained](https://www.youtube.com/watch?v=1BfCnjr_Vjg)
+- [WebSocket Protocol Deep Dive](https://www.youtube.com/watch?v=i5OVcTdt_OU)
+
+**📚 References**
+- [WebSocket RFC 6455](https://datatracker.ietf.org/doc/html/rfc6455)
+- [MDN WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)
+
+---
+
+## Git Learning
+
+**[→ View Git Learning README](./git-learning/README.md)**
+
+### Branching Strategies
+**Path:** `git-learning/branching-strategies/`
+
+Learning different Git branching strategies including Git Flow, GitHub Flow, trunk-based development, and understanding when to use each strategy for different team sizes and project types.
+
+**📖 Articles**
+- [Git Branching Model](https://nvie.com/posts/a-successful-git-branching-model/)
+- [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow)
+
+**🎥 YouTube**
+- [Git Branching Strategies](https://www.youtube.com/watch?v=aJnFGMclhU8)
+- [Git Flow Tutorial](https://www.youtube.com/watch?v=1SXpE08hvGs)
+
+**📚 References**
+- [Atlassian Git Branching](https://www.atlassian.com/git/tutorials/comparing-workflows)
+- [Git Documentation](https://git-scm.com/doc)
+
+---
+
+### Rebase Practice
+**Path:** `git-learning/rebase-practice/`
+
+Mastering Git rebase for maintaining clean commit history. Understanding interactive rebase, squashing commits, reordering commits, and resolving rebase conflicts safely.
+
+**📖 Articles**
+- [Git Rebase Documentation](https://git-scm.com/docs/git-rebase)
+- [Rebase vs Merge](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+
+**🎥 YouTube**
+- [Git Rebase Tutorial](https://www.youtube.com/watch?v=f1wnYdLEpgI)
+- [Interactive Rebase](https://www.youtube.com/watch?v=tukOm3Afd8s)
+
+**📚 References**
+- [Pro Git Book - Rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
+- [Git Rebase Guide](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
+
+---
+
+## Contributing
+
+Feel free to explore, learn, and contribute! If you find helpful resources or have suggestions for improvements, please open an issue or pull request.
+
+## License
+
+This repository is for educational purposes. Individual projects may have their own licenses.
