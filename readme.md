@@ -67,7 +67,7 @@ A comprehensive collection of projects, experiments, and learning resources cove
 
 ### AI/ML
 - [AI SDK](#ai-sdk) - `ai` `llm` `sdk`
-- [LLM Workflows](#llm-workflows) - `llm` `workflows` `automation`
+- [LLM Workflows and research papers ](#llm-articles-and-research-papers) - `llm` `workflows` `automation`
 - [Agents Basics](#agents-basics) - `ai` `agents` `autonomous`
 
 
@@ -644,22 +644,25 @@ Exploring AI SDK for integrating language models into applications. Understandin
 
 ---
 
-### LLM Workflows
+### LLM Articles and Research papers
 **Path:** `ai-ml/llm-workflows/`
 
 Building complex workflows with large language models including chaining prompts, managing context, implementing RAG (Retrieval Augmented Generation), and orchestrating multi-step AI processes.
 
 **📖 Articles**
-- [LLM Workflow Patterns](https://www.anthropic.com/index/building-effective-agents)
-- [RAG Tutorial](https://www.pinecone.io/learn/retrieval-augmented-generation/)
+Here you go — ready to drop into your README:
 
-**🎥 YouTube**
-- [LLM Workflows Explained](https://www.youtube.com/watch?v=1OT_iQAMVJo)
-- [Building RAG Systems](https://www.youtube.com/watch?v=sVcwVQRHIc8)
+* [Attention Is All You Need](https://arxiv.org/pdf/1706.03762)
+* [Language Models Are Few-Shot Learners](https://arxiv.org/pdf/2005.14165)
+* [Training Language Models to Follow Instructions with Human Feedback](https://arxiv.org/pdf/2203.02155)
+* [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/pdf/2106.09685)
+* [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/pdf/2005.11401)
+* [The Rise and Potential of Large Language Model Based Agents: A Survey](https://arxiv.org/pdf/2309.07864)
+* [Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](https://arxiv.org/pdf/2101.03961)
+* [DistilBERT: A Distilled Version of BERT — Smaller, Faster, Cheaper and Lighter](https://arxiv.org/pdf/1910.01108)
+* [LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale](https://arxiv.org/pdf/2208.07339)
+* [Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)
 
-**📚 References**
-- [LangChain Documentation](https://python.langchain.com/docs/get_started/introduction)
-- [Vector Databases](https://www.pinecone.io/learn/vector-database/)
 
 ---
 
