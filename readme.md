@@ -16,7 +16,6 @@ A comprehensive collection of projects, experiments, and learning resources cove
 - [React Core ](#react-core) - `react` `hooks` `state` `react-query`
 - [Next.js ](#nextjs) - `nextjs` `routing` `ssr` `isr` `dynamic` `caching`
 - [Next.js  Deployment Options](#nextjs-deployment) - `nextjs` `deployment` `coolify` `cloudflare`
-
 - [TanStack Start Framework](#tanstack-start) - `react` `tanstack-start` `routing` `tanstack-ecosystem`
 
 ### Backend
@@ -53,7 +52,6 @@ A comprehensive collection of projects, experiments, and learning resources cove
 
 ### DSA
 - [data-structures](#data-structures) - `dsa` `data-structures` `arrays` `graph` `heaps` `linked-list` `trees`
-
 - [Patterns](#dsa-patterns) - `backtracking` `DP` `slding-window` `two-pointers` `algorithms`
 
 ### CS Fundamentals
@@ -195,6 +193,7 @@ Exploring react and hooks with  state management approaches in React including u
 
 Understanding TanStack Query (React Query) for server state management, caching, background refetching, and optimistic updates. Managing async data with minimal boilerplate.
 
+
 **📖 Articles**
 - [React Documentation - Managing State](https://react.dev/learn/managing-state)
 - [State Management in React](https://www.robinwieruch.de/react-state/)
@@ -202,6 +201,7 @@ Understanding TanStack Query (React Query) for server state management, caching,
 - [React Query Tutorial](https://tkdodo.eu/blog/practical-react-query)
 
 **🎥 YouTube**
+- [React and Js single video concepts](https://www.youtube.com/@Nova_Designs_/videos)
 - [React State Management Tutorial](https://www.youtube.com/watch?v=35lXWvCuM8o)
 - [Context API Deep Dive](https://www.youtube.com/watch?v=5LrDIWkK_Bc)
 - [React Query Tutorial](https://www.youtube.com/watch?v=novnyCaa7To)
