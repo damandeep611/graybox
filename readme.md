@@ -6,6 +6,12 @@ A comprehensive collection of projects, experiments, and learning resources cove
 
 ## 📚 Quick Index
 
+### Tech and Podcasts
+
+- [Code & Curiosity by Maximilian schwarzmüller ](https://www.youtube.com/playlist?list=PLg_-ZSpC5BWJqe6vX3MVggfJ6Zr0j9E_n)
+- [Matt Pocock Typescript and AI sdk](https://www.youtube.com/@mattpocockuk/videos)
+- [Devops and Docker with Node js](https://www.youtube.com/playlist?list=PL8VzFQ8k4U1JEu7BLraz8MdKJILJir7oY)
+
 ### Languages & Fundamentals
 - [JavaScript Basics](#javascript-basics) - `javascript` `fundamentals`
 - [TypeScript Deep Dive](#typescript-deep-dive) - `typescript` `types`
