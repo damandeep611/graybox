@@ -66,6 +66,9 @@ A comprehensive collection of projects, experiments, and learning resources cove
 - [memory](#memory) 
 
 ### AI/ML
+**[→ View  README](./ai-ml/readme.md)**
+
+
 - [AI SDK](#ai-sdk) - `ai` `llm` `sdk`
 - [LLM Workflows and research papers ](#llm-articles-and-research-papers) - `llm` `workflows` `automation`
 - [Agents Basics](#agents-basics) - `ai` `agents` `autonomous`
@@ -650,7 +653,7 @@ Exploring AI SDK for integrating language models into applications. Understandin
 Building complex workflows with large language models including chaining prompts, managing context, implementing RAG (Retrieval Augmented Generation), and orchestrating multi-step AI processes.
 
 **📖 Articles**
-Here you go — ready to drop into your README:
+**[→ View  README](./ai-ml/readme.md)**
 
 * [Attention Is All You Need](https://arxiv.org/pdf/1706.03762)
 * [Language Models Are Few-Shot Learners](https://arxiv.org/pdf/2005.14165)
